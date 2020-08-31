@@ -1,0 +1,128 @@
+$navFontSize: 16px;
+$navBackCol: #130434;
+$navHovBackCol: red;
+$navHovCol: yellow;
+$unListBackCol: #F7EEC5;
+$h1Col: #F6A8C8;
+$h1FontSize: 96px;
+$h2Col: #ff4d94;
+$h2fontSize: 48px;
+$backGrColor: #3d0099;
+$fontSizeSmall: 48px;
+$fontSizeNormal: 24px;
+
+
+@media (min-width: 700px) {
+  #basicinfo {
+    font-size: $fontSizeNormal;
+  }
+  #detailedinfo {
+    ul, li { font-size: $fontSizeNormal;
+    }
+  }
+  th, td {
+    font-size: $fontSizeNormal;
+  }
+}
+@media (max-width: 699px) {
+  #basicinfo {
+    font-size: $fontSizeSmall;
+  }
+  #detailedinfo {
+    ul, li { font-size: $fontSizeSmall;
+    }
+  }
+  th, td {
+    font-size: $fontSizeSmall;
+  }
+}
+
+#basicinfo {
+  background-color: $unListBackCol;
+  li {
+    list-style-type: lower-greek;
+  }
+
+}
+%standardtext {
+  font-family: sans-serif;
+  font: georgia;
+  font-size: $fontSizeNormal;
+
+}
+
+
+
+.navbar-inner {
+  @extend %standardtext;
+  background-color: $backGrColor;
+  a:hover {
+    background-color: $navHovBackCol;
+    color: $navHovCol;
+    }
+  ul li {
+  background-color: $backGrColor;
+  list-style-type: none;
+  }
+
+}
+
+body {
+  @extend %standardtext;
+  background-color: $backGrColor;
+  text-align: left;
+
+}
+.details {
+  background-color: yellow;
+  ul li {
+    background-color: yellow;
+  }
+  h2 {
+    color: blue;
+  }
+
+}
+
+
+ul li {
+  background-color: $unListBackCol;
+}
+
+h1 {
+  color: $h1Col;
+  font-size: $h1FontSize;
+  font-weight: bold;
+}
+
+h2 {
+  color: $h2Col;
+  font-size: $h2fontSize;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+.row > div {
+  @extend %standardtext;
+  padding: 10px;
+  background-color: #ccb3ff;
+  border: 2px solid black
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 2px;
+  text-align: center;
+
+}
+th {
+  background-color: lightgreen;
+}
+td {
+  background-color: lightblue;
+}

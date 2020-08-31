@@ -1,6 +1,4 @@
-# Project 0
-
-Web Programming with Python and JavaScript
+# Solar System
 
 Solar System is a small webpage containing some basic information about the
 Solar System and each of its planets.
@@ -14,4 +12,3 @@ as it takes advantage of bootstrap grid system.
 All the information that the webpage contains were sourced from Wikipedia and
 are licensed under Creative Commons.
 All credits are given within the page.
-# solar-system
